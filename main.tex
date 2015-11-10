@@ -82,23 +82,39 @@ la cui sensibilità è \(\sigma = \SI{0.005}{\centi\metre}\). I valori ottenuti 
 Calcoliamo i valori medi (\(\overline{x}\)) e gli errori assoluti (\(\epsilon_x\))
 di tutte le misure, quantificando l'errore assoluto tramite la semidispersione
 (\(s_x\)), quando questa sia maggiore o uguale alla sensibilità dello strumento,
-oppure la sensibilità stessa.
+oppure la sensibilità stessa. Dal momento che ci serviranno, andremo a calcolare anche gli errori
+relativi (\(e_x\)), che ricordiamo essere legati agli errori assoluti dalla formula
+\(e_x = {\epsilon_x} \, / \, {\overline{x}}\)
 
-\begin{center}\begin{tabular}{ccccc}
+\begin{center}\begin{tabular}{cccccc}
   \toprule
-  \textbf{solido} & \(x\) & \(\overline{x}\) (\si{\centi\metre}) & \(s_x\) (\si{\centi\metre}) & \(\epsilon_x\) (\si{\centi\metre}) \\
+  \textbf{solido} & \(x\) & \(\overline{x}\) (\si{\centi\metre}) & \(s_x\) (\si{\centi\metre}) & \(\epsilon_x\) (\si{\centi\metre}) & \(e_x\)\\
   \midrule
-  \textbf{C1} & \(\ell_1\) & \num{1.251} & \num{0.005} & \num{0.005} \\
+  \textbf{C1} & \(\ell_1\) & \num{1.251} & \num{0.005} & \num{0.005} & \num{0.004}\\
   \midrule
-  \textbf{C2} & \(\ell_2\) & \num{3.716} & \num{0.012} & \num{0.012} \\
+  \textbf{C2} & \(\ell_2\) & \num{3.716} & \num{0.012} & \num{0.012} & \num{0.003} \\
   \midrule
-  \multirow{3}{*}{\textbf{P}} & \(a\) & \num{0.512} & \num{0.002} & \num{0.005} \\
-                              & \(b\) & \num{4.326} & \num{0.008} & \num{0.008} \\
-                              & \(c\) & \num{9.750} & \num{0.000} & \num{0.005} \\
+  \multirow{3}{*}{\textbf{P}} & \(a\) & \num{0.512} & \num{0.002} & \num{0.005} & \num{0.010}\\
+                              & \(b\) & \num{4.326} & \num{0.008} & \num{0.008} & \num{0.0018} \\
+                              & \(c\) & \num{9.750} & \num{0.000} & \num{0.005} & \num{0.0005} \\
   \midrule
-  \textbf{S} & \(d\) & \num{2.104} & \num{0.008} & \num{0.008} \\
+  \textbf{S} & \(d\) & \num{2.104} & \num{0.008} & \num{0.008} & \num{0.004} \\
   \bottomrule
 \end{tabular}\end{center}
 
-
+Di seguito andiamo a calcolare i volumi e propagare l'errore su di essi.\\[1em]
+%
+Nel caso del cubo avremo \(e_V = 3 \, e_\ell\)\\[1em]
+%
+Quindi per il primo cubo:
+\[e_{V_1} = 3 \, e_{\ell_1} = \num{0.012}\]
+\[\overline{V_1} = \left( \overline{\ell_1} \right)^3 = \left( \SI{1.251}{\centi\metre} \right)^3 = \SI{1.958}{\cubic\centi\metre}\]
+\[\epsilon_{V_1} = \overline{V_1} \cdot e_{V_1} = \left(\SI{1.958}{\cubic\centi\metre}\right) \cdot \num{0.012} = \SI{0.02}{\cubic\centi\metre} \]
+\[V_1 = \SI{1.96(2)}{\cubic\centi\metre}\]
+%
+Per il secondo cubo:
+\[e_{V_2} = 3 \, e_{\ell_2} = \num{0.009}\]
+\[\overline{V_2} = \left( \overline{\ell_2} \right)^3 = \left( \SI{3.716}{\centi\metre} \right)^3 = \SI{51.313}{\cubic\centi\metre}\]
+\[\epsilon_{V_2} = \overline{V_2} \cdot e_{V_2} = \left(\SI{51.313}{\cubic\centi\metre}\right) \cdot \num{0.009} = \SI{0.5}{\cubic\centi\metre} \]
+\[V_2 = \SI{51.3(5)}{\cubic\centi\metre}\]
 \end{document}
