@@ -65,15 +65,40 @@ la cui sensibilità è \(\sigma = \SI{0.005}{\centi\metre}\). I valori ottenuti 
   \toprule
   \textbf{solido} & \textbf{grandezza} & \multicolumn{5}{c}{\textbf{misura} (\si{\centi\metre})} \\
   \midrule
-  \textbf{cubo 1} & \(\ell_1\) & \num{1.245} & \num{1.255} & \num{1.250} & \num{1.255} & \num{1.250} \\
+  \textbf{C1} & \(\ell_1\) & \num{1.245} & \num{1.255} & \num{1.250} & \num{1.255} & \num{1.250} \\
   \midrule
-  \textbf{cubo 2} & \(\ell_2\) & \num{3.725} & \num{3.700} & \num{3.720} & \num{3.715} & \num{3.720} \\
+  \textbf{C2} & \(\ell_2\) & \num{3.725} & \num{3.700} & \num{3.720} & \num{3.715} & \num{3.720} \\
   \midrule
-  \multirow{3}{*}{\textbf{parallelepipedo}} & \(a\) & \num{0.515} & \num{0.510} & \num{0.510} & \num{0.515} & \num{0.510} \\
-                                            & \(b\) & \num{4.325} & \num{4.320} & \num{4.330} & \num{4.335} & \num{4.320} \\
-                                            & \(c\) & \num{9.750} & \num{9.750} & \num{9.750} & \num{9.750} & \num{9.750} \\
+  \multirow{3}{*}{\textbf{P}} & \(a\) & \num{0.515} & \num{0.510} & \num{0.510} & \num{0.515} & \num{0.510} \\
+                              & \(b\) & \num{4.325} & \num{4.320} & \num{4.330} & \num{4.335} & \num{4.320} \\
+                              & \(c\) & \num{9.750} & \num{9.750} & \num{9.750} & \num{9.750} & \num{9.750} \\
   \midrule
-  \textbf{sfera} & \(d\) & \num{2.110} & \num{2.105} & \num{2.095} & \num{2.100} & \num{2.110} \\
+  \textbf{S} & \(d\) & \num{2.110} & \num{2.105} & \num{2.095} & \num{2.100} & \num{2.110} \\
   \bottomrule
 \end{tabular}\end{center}
+
+\section{Analisi dei dati}
+
+Calcoliamo i valori medi (\(\overline{x}\)) e gli errori assoluti (\(\epsilon_x\))
+di tutte le misure, quantificando l'errore assoluto tramite la semidispersione
+(\(s_x\)), quando questa sia maggiore o uguale alla sensibilità dello strumento,
+oppure la sensibilità stessa.
+
+\begin{center}\begin{tabular}{ccccc}
+  \toprule
+  \textbf{solido} & \(x\) & \(\overline{x}\) (\si{\centi\metre}) & \(s_x\) (\si{\centi\metre}) & \(\epsilon_x\) (\si{\centi\metre}) \\
+  \midrule
+  \textbf{C1} & \(\ell_1\) & \num{1.251} & \num{0.005} & \num{0.005} \\
+  \midrule
+  \textbf{C2} & \(\ell_2\) & \num{3.716} & \num{0.012} & \num{0.012} \\
+  \midrule
+  \multirow{3}{*}{\textbf{P}} & \(a\) & \num{0.512} & \num{0.002} & \num{0.005} \\
+                              & \(b\) & \num{4.326} & \num{0.008} & \num{0.008} \\
+                              & \(c\) & \num{9.750} & \num{0.000} & \num{0.005} \\
+  \midrule
+  \textbf{S} & \(d\) & \num{2.104} & \num{0.008} & \num{0.008} \\
+  \bottomrule
+\end{tabular}\end{center}
+
+
 \end{document}
