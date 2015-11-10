@@ -1,17 +1,71 @@
 \documentclass[12pt]{scrartcl}
-\title{Title}
-\author{A. Saltini}
+\title{Misure di Volume}
+\author{J. B. d'Alembert, B. Cavalieri, A. Einstein}
 \date{\today}
 \setlength{\parindent}{0pt}
 
 \input{headers/default}
 \input{headers/si}
 % \input{headers/bibliography}
-% \input{headers/drawings}
+\input{headers/drawings}
 % \input{headers/fancy}
 
 \begin{document}
 \maketitle
 
+\section{Teoria}
 
+Il \textbf{volume} di un corpo è la misura dello spazio occupato da esso.\\[1em]
+In questa relazione andremo a misurare indirettamente il volume di alcuni
+oggetti; in particolare calcoleremo il volume di due cubi ed un parallelepipedo
+rettangolo a partire dalla misura dei loro spigoli, e di una sfera a
+partire dalla misura del diametro.\\[1em]
+Per la misure di queste grandezze ci serviremo di un calibro universale a nonio,
+illustrato in Fig.~\ref{fig::calibro}. Esso è composto dalle seguenti parti:
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\textwidth]{includes/pictures/vernier.pdf}
+  \caption{Calibro universale a nonio.}
+  \label{fig::calibro}
+\end{figure}
+
+\begin{multicols}{2}
+\begin{enumerate}
+  \item \textbf{becchi esterni}: per larghezze o diametri esterni;
+  \item \textbf{becchi interni}: per larghezze o diametri interni;
+  \item \textbf{asta}: per misure di profondità;
+  \item \textbf{scala principale}: per misure millimetriche;
+  \item \textbf{nonio}: per misurare le frazioni di millimetro;
+  \item \textbf{freno}: per il bloccaggio.
+\end{enumerate}
+\end{multicols}
+
+Per la lettura del calibro, avendo ben posizionato l'oggetto tra i becchi esterni,
+si guarda quale tacca della scala principale è \emph{immediatamente precedente} alla
+tacca che denota lo \(0\) sul nonio. Il valore di tale tacca è la misura precisa al
+millimetro. In seguito si determina quale tacca del nonio corrisponde con la maggior
+precisione ad una tacca della scala principale; tale valore sul nonio corrisponderà
+alla frazione di millimetro da aggiungere alla misura precedente.\\[1em]
+Le formule per il volume che andremo ad utilizzare saranno le seguenti:
+
+\begin{itemize}
+  \item cubo di spigolo \(\ell\):\hspace{5mm} \(V = \ell^3\)
+  \item parallelepipedo rettangolo di spigoli \(a\), \(b\) e \(c\):\hspace{5mm} \(V = abc\)
+  \item sfera di raggio \(r\) e diametro \(d = 2r\):\hspace{5mm} \(V = \dfrac{4}{3} \pi r^3 = \dfrac{1}{6} \pi d^3\)
+\end{itemize}
+
+
+\section{Misure}
+
+Tutte le misure sono state svolte utilizzando un calibro universale a nonio ventesimale,
+la cui sensibilità è di \SI{0.005}{\centi\metre}. I valori ottenuti sono i seguenti
+
+\begin{tabular}{ccccccc}
+  \toprule
+  \textbf{solido} & \textbf{grandezza} & \multicolumn{5}{c}{\textbf{misura} (\si{\centi\metre})} \\
+  \midrule
+  \textbf{cubo 1} & \(\ell_1\) & \num{1.245} & \num{1.255} & \num{1.250} & \num{1.255} & \num{1.250} \\
+  \bottomrule
+\end{tabular}
 \end{document}
