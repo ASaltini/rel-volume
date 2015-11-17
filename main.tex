@@ -50,16 +50,18 @@ alla frazione di millimetro da aggiungere alla misura precedente.\\[1em]
 Le formule per il volume che andremo ad utilizzare saranno le seguenti:
 
 \begin{itemize}
-  \item cubo di spigolo \(\ell\):\hspace{5mm} \(V = \ell^3\)
-  \item parallelepipedo rettangolo di spigoli \(a\), \(b\) e \(c\):\hspace{5mm} \(V = abc\)
-  \item sfera di raggio \(r\) e diametro \(d = 2r\):\hspace{5mm} \(V = \dfrac{4}{3} \pi r^3 = \dfrac{1}{6} \pi d^3\)
+  \item \makebox[0.6\linewidth]{cubo di spigolo \(\ell\):\hfill} \(V = \ell^3\)
+  \item \makebox[0.6\linewidth]{parallelepipedo rettangolo di spigoli \(a\), \(b\) e \(c\):\hfill} \(V = abc\)
+  \item \makebox[0.6\linewidth]{sfera di raggio \(r\) o diametro \(d = 2r\):\hfill} \(V = \dfrac{4}{3} \pi r^3 = \dfrac{1}{6} \pi d^3\)
 \end{itemize}
 
 
 \section{Misure}
 
 Tutte le misure sono state svolte utilizzando un calibro universale a nonio ventesimale,
-la cui sensibilità è \(\sigma = \SI{0.005}{\centi\metre}\). I valori ottenuti sono i seguenti
+la cui sensibilità è \(\sigma = \SI{0.005}{\centi\metre}\). I campioni utilizzati sono
+stati due cubi, \textbf{C1} e \textbf{C2}, un parallelepipedo \textbf{P} ed una
+sfera \textbf{S} Tutti i valori ottenuti sono riportati in tabella.
 
 \begin{center}\begin{tabular}{ccccccc}
   \toprule
@@ -82,9 +84,10 @@ la cui sensibilità è \(\sigma = \SI{0.005}{\centi\metre}\). I valori ottenuti 
 Calcoliamo i valori medi (\(\overline{x}\)) e gli errori assoluti (\(\epsilon_x\))
 di tutte le misure, quantificando l'errore assoluto tramite la semidispersione
 (\(s_x\)), quando questa sia maggiore o uguale alla sensibilità dello strumento,
-oppure la sensibilità stessa. Dal momento che ci serviranno, andremo a calcolare anche gli errori
-relativi (\(e_x\)), che ricordiamo essere legati agli errori assoluti dalla formula
-\(e_x = {\epsilon_x} \, / \, {\overline{x}}\)
+oppure la sensibilità stessa. Dal momento che ci serviranno per la propagazione
+dell'errore, andremo a calcolare anche gli errori relativi (\(e_x\)),
+che ricordiamo essere legati agli errori assoluti dalla formula
+\(e_x = {\epsilon_x} \, / \, {\overline{x}}\).
 
 \begin{center}\begin{tabular}{cccccc}
   \toprule
@@ -104,17 +107,28 @@ relativi (\(e_x\)), che ricordiamo essere legati agli errori assoluti dalla form
 
 Di seguito andiamo a calcolare i volumi e propagare l'errore su di essi.\\[1em]
 %
-Nel caso del cubo avremo \(e_V = 3 \, e_\ell\)\\[1em]
-%
-Quindi per il primo cubo:
-\[e_{V_1} = 3 \, e_{\ell_1} = \num{0.012}\]
-\[\overline{V_1} = \left( \overline{\ell_1} \right)^3 = \left( \SI{1.251}{\centi\metre} \right)^3 = \SI{1.958}{\cubic\centi\metre}\]
-\[\epsilon_{V_1} = \overline{V_1} \cdot e_{V_1} = \left(\SI{1.958}{\cubic\centi\metre}\right) \cdot \num{0.012} = \SI{0.02}{\cubic\centi\metre} \]
-\[V_1 = \SI{1.96(2)}{\cubic\centi\metre}\]
+Per il primo cubo:
+\begin{align*}
+  e_{V_1} &= 3 \, e_{\ell_1} = \num{0.012} \\
+  \overline{V_1} &= \left( \overline{\ell_1} \right)^3 = \left( \SI{1.251}{\centi\metre} \right)^3 = \SI{1.958}{\cubic\centi\metre} \\
+  \epsilon_{V_1} &= \overline{V_1} \cdot e_{V_1} = \left(\SI{1.958}{\cubic\centi\metre}\right) \cdot \num{0.012} = \SI{0.02}{\cubic\centi\metre} \\
+  V_1 &= \SI{1.96(2)}{\cubic\centi\metre}
+\end{align*}
 %
 Per il secondo cubo:
-\[e_{V_2} = 3 \, e_{\ell_2} = \num{0.009}\]
-\[\overline{V_2} = \left( \overline{\ell_2} \right)^3 = \left( \SI{3.716}{\centi\metre} \right)^3 = \SI{51.313}{\cubic\centi\metre}\]
-\[\epsilon_{V_2} = \overline{V_2} \cdot e_{V_2} = \left(\SI{51.313}{\cubic\centi\metre}\right) \cdot \num{0.009} = \SI{0.5}{\cubic\centi\metre} \]
-\[V_2 = \SI{51.3(5)}{\cubic\centi\metre}\]
+\begin{align*}
+  e_{V_2} &= 3 \, e_{\ell_2} = \num{0.009} \\
+  \overline{V_2} &= \left( \overline{\ell_2} \right)^3 = \left( \SI{3.716}{\centi\metre} \right)^3 = \SI{51.313}{\cubic\centi\metre} \\
+  \epsilon_{V_2} &= \overline{V_2} \cdot e_{V_2} = \left(\SI{51.313}{\cubic\centi\metre}\right) \cdot \num{0.009} = \SI{0.5}{\cubic\centi\metre} \\
+  V_2 &= \SI{51.3(5)}{\cubic\centi\metre}
+\end{align*}
+%
+Per il parallelepipedo:
+\begin{align*}
+  e_{V_\textbf{P}} &= e_{a} + e_{b} + e_{c} = \num{0.012} \\
+  \overline{V_\textbf{P}} &= a \, b \, c = \SI{0.512}{\centi\metre} \cdot \SI{4.326}{\centi\metre} \cdot \SI{9.750}{\centi\metre} = \SI{21.595}{\cubic\centi\metre} \\
+  \epsilon_{V_\textbf{P}} &= \overline{V_\textbf{P}} \cdot e_{V_\textbf{P}} = \left(\SI{21.595}{\cubic\centi\metre}\right) \cdot \num{0.012} = \SI{0.3}{\cubic\centi\metre} \\
+  V_\textbf{P} &= \SI{21.6(3)}{\cubic\centi\metre}
+\end{align*}
+
 \end{document}
